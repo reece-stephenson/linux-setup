@@ -38,3 +38,10 @@ ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/the
 cp templates/.spaceshiprc.zsh ~/.spaceshiprc.zsh
 
 echo "Spaceship setup complete"
+echo "Install nvm"
+
+curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
+# TODO: Add configuration for restarting terminal
+nvm install --lts
+
+echo "nvm setup complete"
